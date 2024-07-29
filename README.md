@@ -1,3 +1,6 @@
+![image](https://github.com/user-attachments/assets/9b127c08-069c-4bdb-8318-5b2818123603)
+
+ 
  # Oh My Posh - Windows
 ### Paso 1
 - Descargar PoweShell
