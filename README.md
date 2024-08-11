@@ -1,6 +1,8 @@
 ![image](https://github.com/user-attachments/assets/9b127c08-069c-4bdb-8318-5b2818123603)
 
  
+
+ 
  # Oh My Posh - Windows
 ### Paso 1
 - Descargar PoweShell
@@ -19,13 +21,8 @@ oh-my-posh font install
 
 ```
 ### Paso 3
-- Elegir combinación de colores `One Half Dark` y tipo de fuente `FiraCode Nerd Font Mono`
-- Elegir `Oh my posh` 
-```powershell
+- Elegir  tipo de fuente `FiraCode Nerd Font Mono`
 
-oh-my-posh get shell
-
-```
 - Abrir archivo de configuración
 ```powershell
 
@@ -41,7 +38,7 @@ New-Item -Path $PROFILE -Type File -Force
 - Poner este codigo en el archivo
 ```powershell
 
-oh-my-posh init pwsh | Invoke-Expression
+oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\quick-term.omp.json" | Invoke-Expression
 
 ```
 
@@ -52,13 +49,8 @@ oh-my-posh init pwsh | Invoke-Expression
 Get-PoshThemes
 
 ```
-- Reemplazar el texto del archivo de configiración con
-```powershell
 
-oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\jandedobbeleer.omp.json" | Invoke-Expression
-
-```
-- Cambiar de tema editara la parte de `jandedobbeleer.omp.json` en el texto por tu tema preferido
+- Cambiar de tema editara la parte de `quick-term.omp.json` en el texto por tu tema preferido
 ```powershell
 
 oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\clean-detailed.omp.json" | Invoke-Expression
@@ -82,4 +74,3 @@ Import-Module -Name Terminal-Icons
 ### Paso 6
 - Configurara transparencia y opacidad
 `Configuración -> Valores predeterminado -> Transparencia -> Opacidad de fondo 50% y Habilitar material acrílico`
-
